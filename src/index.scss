@@ -1,6 +1,13 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
+// SNOTIFY - NOTIFICATIONS
+@import "~vue-snotify/styles/simple";
+
+// ALERTIFY
+@import "~alertifyjs/build/css/alertify.min.css";
+@import "~alertifyjs/build/css/themes/bootstrap.min.css";
+
 // Variables
 @import "variables";
 
