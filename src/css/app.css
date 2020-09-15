@@ -1,0 +1,136 @@
+/*
+ * ─── MODAL ──────────────────────────────────────────────────────────────────────
+ */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.content-load-modal-guest {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2000;
+    color: white;
+    background: #f8fafc;
+}
+.load-modal-guest {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 16px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    border-top: 16px solid #0088cc;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+.content-load-modal {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2000;
+    color: white;
+}
+.load-modal {
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 18px;
+}
+
+.h-modal-body {
+    height: calc(var(--app-content-height) - 17px) !important;
+}
+
+/*
+ * ─── LOADING ────────────────────────────────────────────────────────────────────
+ */
+
+#loading-main {
+    background: linear-gradient(to right, #fefefe 30%, #e3e3e3 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading__text {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: black;
+}
+
+.loading__spinner {
+    color: var(--color-pj-2);
+    border-style: dashed;
+    padding: 50px;
+    border-width: 25px;
+    -webkit-animation: girar 2s linear infinite;
+    -o-animation: girar 2s linear infinite;
+    animation: girar 2s linear infinite;
+}
+
+.loader {
+    border-top: 10px solid var(--color-pj-blue);
+    border-right: 10px solid var(--color-pj-1);
+    border-bottom: 10px solid var(--red);
+    border-left: 10px solid var(--color-pj-yellow);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+ * ─── BACKGROUND-HELPER ──────────────────────────────────────────────────────────
+ */
+
+.bg-black-trans {
+    background: #00000082;
+}
