@@ -1,0 +1,110 @@
+.inner-wrapper {
+    display: table;
+    min-height: 100vh;
+    padding-top: 60px;
+    table-layout: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+.content-body {
+    display: table-cell;
+    padding: 40px;
+    position: relative;
+    vertical-align: top;
+}
+.page-header {
+    background: #171717;
+    border-bottom: none;
+    border-left: 1px solid #3a3a3a;
+    box-shadow: 1px 3px 0 1px #cccccc;
+    height: 50px;
+    margin: -40px -40px 40px -40px;
+    padding: 0;
+}
+.page-header {
+    z-index: 1001;
+}
+.page-header {
+    border-left-color: #e6e6e6;
+    background: #f6f6f6;
+    box-shadow: 1px 3px 0 1px #e2e3e6;
+}
+.page-header h2 {
+    color: #fff;
+    border-bottom: 4px solid #ccc;
+    box-sizing: content-box;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 50px;
+    margin: 0 0 0 -1px;
+    padding: 0 22px 0 20px;
+}
+.page-header h2 {
+    border-bottom-color: $primary-color;
+}
+.page-header h2 {
+    color: #333;
+}
+.page-header .breadcrumbs {
+    display: inline-block;
+    font-size: 0;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+.page-header .breadcrumbs li {
+    color: #c3c3c3;
+    display: inline-block;
+    font-weight: 300;
+}
+.page-header .breadcrumbs a,
+.page-header .breadcrumbs span {
+    color: #c3c3c3;
+    display: inline-block;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.page-header .breadcrumbs a,
+.page-header .breadcrumbs span {
+    color: #333;
+}
+.page-header .breadcrumbs i {
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+.page-header .breadcrumbs li:after {
+    content: "/";
+    display: inline-block;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.page-header .breadcrumbs li:last-child:after {
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+    .inner-wrapper {
+        padding-top: 110px;
+        display: block;
+    }
+    .content-body {
+        margin-left: 300px;
+        display: block;
+        flex: 2;
+        min-width: 1px;
+    }
+    .page-header {
+        left: 300px;
+        margin: 0;
+        position: fixed;
+        right: 0;
+        top: 60px;
+    }
+}

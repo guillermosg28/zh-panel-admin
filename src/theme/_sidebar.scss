@@ -1,0 +1,197 @@
+.sidebar-left {
+    background: #fff;
+    z-index: 1010;
+    color: #777;
+    display: table-cell;
+    position: relative;
+    vertical-align: top;
+    width: 300px;
+    z-index: 1010;
+    transition: width 0.3s;
+}
+@keyframes zh-navbar-box-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.sidebar-left .sidebar-header {
+    position: relative;
+    color: #777;
+    height: 50px;
+}
+
+.sidebar-left .sidebar-header .sidebar-title {
+    background: #fff;
+    color: #465162;
+    padding: 15px;
+    font-size: 0.8rem;
+}
+
+.sidebar-left .sidebar-header .sidebar-toggle {
+    background: #f6f6f6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 73px;
+    height: 50px;
+    border-radius: 0 0 0 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sidebar-left .sidebar-header .sidebar-toggle i {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 50px;
+    transition: all 0.15s ease-in-out;
+}
+
+.sidebar-left .nano {
+    background: #fff;
+    box-shadow: -5px 0 0 #f6f6f6 inset;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.nano > .nano-content {
+    overflow: scroll;
+    overflow-x: hidden;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+ul.nav-main {
+    margin-top: 3px;
+    margin-right: 5px;
+}
+ul.nav-main li {
+    width: 100%;
+}
+ul.nav-main > li > a {
+    padding: 12px 25px;
+}
+ul.nav-main li a {
+    color: #777;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+ul.nav-main li i {
+    font-size: 1.15rem;
+    width: 1.1em;
+    margin-right: 0.5em;
+    text-align: center;
+    vertical-align: middle;
+}
+ul.nav-main li span {
+    vertical-align: middle;
+}
+
+ul.nav-main > li > a:hover {
+    background-color: #fafafa;
+}
+
+ul.nav-main li.nav-parent {
+    position: relative;
+}
+
+ul.nav-main li .nav-children {
+    background: #f6f6f6;
+    box-shadow: 0 -3px 3px -3px rgba(0, 0, 0, 0.1) inset;
+    display: none;
+    padding: 10px 0;
+}
+ul.nav-main li.nav-parent.nav-expanded > ul.nav-children {
+    display: block;
+}
+ul.nav-main li .nav-children li a {
+    padding: 6px 15px 6px 57px;
+    overflow: hidden;
+}
+ul.nav-main li .nav-children li.router-link-exact-active > a {
+    color: $primary-color;
+}
+ul.nav-main li.nav-parent > a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: #abb4be;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 25px;
+}
+ul.nav-main li.nav-parent.nav-expanded > a:after {
+    content: "\f106";
+}
+ul.nav-main > li.router-link-exact-active > a {
+    color: $primary-color;
+}
+.nav-parent.nav-parent.active > a {
+    color: $primary-color;
+}
+
+ul.nav-main li .nav-children li a:hover,
+ul.nav-main li .nav-children li a:focus {
+    background: #f1f1f1;
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar-left {
+        bottom: 0;
+        left: 0;
+        padding-bottom: 50px;
+        position: fixed;
+        top: 60px;
+        display: block;
+        flex-shrink: 0;
+    }
+    .sidebar-left .nano-content {
+        padding-bottom: 50px;
+    }
+    .sidebar-left-collapsed {
+        width: 73px;
+    }
+    .sidebar-left-collapsed .sidebar-title {
+        margin-left: -300px;
+        opacity: 0;
+    }
+    .sidebar-left-collapsed .sidebar-header .sidebar-toggle {
+        border-radius: 0;
+    }
+    .sidebar-left-collapsed .nano:hover {
+        width: 300px;
+        transition: width 0.3s;
+    }
+    .sidebar-left-collapsed .nano:hover .nav-main li a span {
+        visibility: visible;
+    }
+    .sidebar-left-collapsed .nav-main > li > a {
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    .sidebar-left-collapsed .nav-main a span {
+        visibility: hidden;
+    }
+    .sidebar-left-collapsed .nav-main a::after {
+        visibility: hidden !important;
+    }
+    .sidebar-left-collapsed .nav-main li.nav-parent > ul.nav-children {
+        display: none !important;
+    }
+    .sidebar-left-collapsed .nano:hover .nav-main .nav-expanded > ul.nav-children {
+        display: block !important;
+    }
+    .sidebar-left-collapsed .nano:hover .nav-main li.nav-parent a:after {
+        visibility: visible !important;
+    }
+}

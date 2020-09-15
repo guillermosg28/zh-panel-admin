@@ -1,0 +1,52 @@
+html,
+body {
+    background: #ecedf0;
+    width: 100%;
+}
+
+html {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
+
+body {
+    color: #777;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 22px;
+    margin: 0;
+    font-size: 13px;
+}
+a {
+    color: $primary-color;
+}
+a:hover {
+    color: lighten($primary-color, 5%);
+}
+a:active {
+    color: darken($primary-color, 5%);
+}
+a:focus {
+    color: lighten($primary-color, 5%);
+}
+
+.h2-logo {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: lighten($primary-color, 5%);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.pull-right {
+    float: right !important;
+}
+.pull-left {
+    float: left !important;
+}
+.text-primary {
+    color: $primary-color !important;
+}
+.font-family-lobster {
+    font-family: "Lobster", cursive !important;
+}

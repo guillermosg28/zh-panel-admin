@@ -1,0 +1,211 @@
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	box-shadow: none !important;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+
+.btn {
+	font-size: 14.4px;
+	font-size: 0.9rem;
+	padding: 7.52px 12px;
+	padding: 0.47rem 0.75rem;
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+}
+
+.form input[aria-invalid="true"],
+.form select[aria-invalid="true"],
+.form textarea[aria-invalid="true"] {
+	border-color: #df2828f2 !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+}
+.form input[aria-invalid="true"]:focus {
+	border-color: #df2828f2 !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483 !important;
+}
+
+.btn.btn-xs {
+	font-size: 11.2px;
+	font-size: 0.7rem;
+	padding: 3.2px 8px;
+	padding: 0.2rem 0.5rem;
+}
+
+.btn.btn-sm {
+	font-size: 12.8px;
+	font-size: 0.8rem;
+	padding: 4.8px 10.4px;
+	padding: 0.3rem 0.65rem;
+}
+
+.btn.btn-lg {
+	font-size: 16px;
+	font-size: 1rem;
+	padding: 8px 16px;
+	padding: 0.5rem 1rem;
+}
+
+.btn.btn-xl {
+	font-size: 16px;
+	font-size: 1rem;
+	padding: 12.8px 32px;
+	padding: 0.8rem 2rem;
+}
+
+.btn.btn-px-1 {
+	padding-left: 5.6px;
+	padding-left: 0.35rem;
+	padding-right: 5.6px;
+	padding-right: 0.35rem;
+}
+
+.btn.btn-px-2 {
+	padding-left: 12px;
+	padding-left: 0.75rem;
+	padding-right: 12px;
+	padding-right: 0.75rem;
+}
+
+.btn.btn-px-3 {
+	padding-left: 20px;
+	padding-left: 1.25rem;
+	padding-right: 20px;
+	padding-right: 1.25rem;
+}
+
+.btn.btn-px-4 {
+	padding-left: 28px;
+	padding-left: 1.75rem;
+	padding-right: 28px;
+	padding-right: 1.75rem;
+}
+
+.btn.btn-px-5 {
+	padding-left: 38.4px;
+	padding-left: 2.4rem;
+	padding-right: 38.4px;
+	padding-right: 2.4rem;
+}
+
+.btn.btn-py-1 {
+	padding-top: 5.6px;
+	padding-top: 0.35rem;
+	padding-bottom: 5.6px;
+	padding-bottom: 0.35rem;
+}
+
+.btn.btn-py-2 {
+	padding-top: 12px;
+	padding-top: 0.75rem;
+	padding-bottom: 12px;
+	padding-bottom: 0.75rem;
+}
+
+.btn.btn-py-3 {
+	padding-top: 20px;
+	padding-top: 1.25rem;
+	padding-bottom: 20px;
+	padding-bottom: 1.25rem;
+}
+
+.btn.btn-py-4 {
+	padding-top: 28px;
+	padding-top: 1.75rem;
+	padding-bottom: 28px;
+	padding-bottom: 1.75rem;
+}
+
+.btn.btn-py-5 {
+	padding-top: 32px;
+	padding-top: 2rem;
+	padding-bottom: 32px;
+	padding-bottom: 2rem;
+}
+
+/* Rounded */
+.btn-rounded {
+	border-radius: 35px;
+}
+
+/* Modern */
+.btn-modern {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding: 12.8px 24px;
+	padding: 0.8rem 1.5rem;
+	font-weight: 600;
+}
+/* Colors */
+html .btn-primary {
+	background-color: $primary-color !important;
+	border-color: $primary-color $primary-color darken($primary-color, 10%) !important;
+	color: #fff !important;
+	&:hover,
+	&.hover {
+		background-color: lighten($primary-color, 7.5%) !important;
+		border-color: lighten($primary-color, 10%) lighten($primary-color, 10%) $primary-color !important;
+		color: #fff;
+	}
+
+	&:focus,
+	&.focus {
+		box-shadow: 0 0 0 3px fade($primary-color, 50%) !important;
+	}
+
+	&.disabled,
+	&:disabled {
+		background-color: $primary-color !important;
+		border-color: $primary-color $primary-color darken($primary-color, 10%) !important;
+	}
+
+	&:active,
+	&.active,
+	.show > &.dropdown-toggle {
+		background-color: darken($primary-color, 7.5%) !important;
+		background-image: none !important;
+		border-color: darken($primary-color, 10%) darken($primary-color, 10%) darken($primary-color, 20%) !important;
+		box-shadow: 0 0 0 0.2rem rgba(red($primary-color), green($primary-color), blue($primary-color), 0.5) !important;
+	}
+}
+
+html .btn-outline-primary {
+	color: $primary-color !important;
+	border-color: $primary-color $primary-color darken($primary-color, 10%) !important;
+	&:hover,
+	&.hover {
+		background-color: $primary-color !important;
+		border-color: $primary-color !important;
+		color: #fff !important;
+	}
+
+	&:focus,
+	&.focus {
+		box-shadow: 0 0 0 3px fade($primary-color, 50%);
+	}
+
+	&.disabled,
+	&:disabled {
+		color: $primary-color;
+		background-color: transparent;
+	}
+
+	&:active,
+	&.active,
+	.show > &.dropdown-toggle {
+		color: #fff !important;
+		background-color: $primary-color !important;
+		border-color: $primary-color !important;
+		box-shadow: 0 0 0 0.2rem rgba(red($primary-color), green($primary-color), blue($primary-color), 0.5) !important;
+	}
+}

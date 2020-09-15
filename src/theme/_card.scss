@@ -1,0 +1,88 @@
+.card {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+.card-featured {
+    border-top: 3px solid #33353f;
+}
+.card-featured-primary {
+    border-color: $primary-color;
+}
+
+.card-header {
+    background: #f6f6f6;
+    border-radius: 5px 5px 0 0 !important;
+    border-bottom: 1px solid #dadada;
+    padding: 18px;
+    position: relative;
+}
+.card-featured .card-header {
+    border-radius: 0;
+}
+
+.card-action-toggle,
+.card-action-dismiss {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.card-actions a,
+.card-actions .card-action {
+    background-color: transparent;
+    border-radius: 2px;
+    color: #b4b4b4;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 24px;
+}
+.card-actions a,
+.card-actions a:focus,
+.card-actions a:hover,
+.card-actions a:active,
+.card-actions a:visited,
+.card-actions .card-action,
+.card-actions .card-action:focus,
+.card-actions .card-action:hover,
+.card-actions .card-action:active,
+.card-actions .card-action:visited {
+    outline: none !important;
+    text-decoration: none !important;
+}
+.card-actions {
+    right: 15px;
+    position: absolute;
+    top: 15px;
+}
+.card-action-toggle:before {
+    content: "\f0d7";
+}
+.card-action-dismiss:before {
+    content: "\f00d";
+}
+.card-title {
+    color: #33353f;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+    text-transform: none;
+    margin: 0;
+}
+.card-featured-primary .card-title {
+    color: $primary-color;
+}
+.card-body {
+    background: #fdfdfd;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+.card-header + .card-body {
+    border-radius: 0 0 5px 5px;
+}

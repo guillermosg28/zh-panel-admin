@@ -1,0 +1,58 @@
+/* Pagination */
+div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+    justify-content: flex-end;
+}
+
+.pagination {
+    > li > a,
+    > li > span,
+    > li > a:hover,
+    > li > span:hover,
+    > li > a:focus,
+    > li > span:focus {
+        color: $primary-color;
+    }
+    > .active > a,
+    > .active > span,
+    > .active > a:hover,
+    > .active > span:hover,
+    > .active > a:focus,
+    > .active > span:focus,
+    .page-item.active .page-link {
+        background-color: $primary-color !important;
+        border-color: $primary-color;
+    }
+}
+
+
+.pagination > .active > a,
+body.dark .pagination > .active > a {
+	border-color: $primary-color $primary-color darken($primary-color, 10%);
+	background-color: $primary-color;
+}
+.page-item.disabled .page-link {
+    cursor: no-drop!important;
+    pointer-events:visible;
+}
+.page-link:focus{
+    box-shadow: none;
+}
