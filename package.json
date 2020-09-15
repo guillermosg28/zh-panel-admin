@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/guillermosg28/zh-panel-admin/issues"
   },
-  "homepage": "https://github.com/guillermosg28/zh-panel-admin#readme"
+  "homepage": "https://github.com/guillermosg28/zh-panel-admin#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
 }
