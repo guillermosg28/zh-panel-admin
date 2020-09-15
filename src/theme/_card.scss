@@ -86,3 +86,12 @@
 .card-header + .card-body {
     border-radius: 0 0 5px 5px;
 }
+
+.card-header-home {
+    font-weight: 600;
+    font-size: 15px;
+    border-top: solid 1px rgba(0, 0, 0, 0.125) !important;
+    border-right: solid 1px rgba(0, 0, 0, 0.125) !important;
+    border-left: solid 1px rgba(0, 0, 0, 0.125) !important;
+    border-bottom: solid 4px $primary-color !important;
+}
