@@ -1,0 +1,15 @@
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// Variables
+@import "variables";
+// Theme
+@import "theme/html";
+@import "theme/form";
+@import "theme/btn";
+
+.body-sign .card-sign .card-title-sign .title {
+    background-color: $primary-color !important;
+}
+.body-sign .card-sign .card-body {
+    border-top-color: $primary-color !important;
+}
