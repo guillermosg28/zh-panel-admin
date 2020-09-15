@@ -9,13 +9,11 @@
 @import "~alertifyjs/build/css/themes/bootstrap.min.css";
 
 // Variables
-@import "variables";
-
-// CSS
-@import "./css/app.css";
+@import "./variables";
 
 // Theme
 @import "theme/html";
+@import "theme/loading";
 @import "theme/header";
 @import "theme/sidebar";
 @import "theme/btn";
