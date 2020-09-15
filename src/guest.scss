@@ -7,9 +7,85 @@
 @import "theme/form";
 @import "theme/btn";
 
-.body-sign .card-sign .card-title-sign .title {
-    background-color: $primary-color !important;
+.container-scroller {
+    overflow: hidden;
 }
-.body-sign .card-sign .card-body {
-    border-top-color: $primary-color !important;
+
+.page-body-wrapper {
+    min-height: calc(100vh - 60px);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 60px;
+}
+.page-body-wrapper.full-page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+.content-wrapper {
+    background: #f8f8f8;
+    padding: 1.75rem 1.75rem;
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+.auth.auth-img-bg {
+    padding: 0;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.auth .brand-logo {
+    margin-bottom: 2rem;
+    text-align: center;
+    img {
+        width: 160px;
+        height: 80px;
+    }
+}
+.form-guest {
+    line-height: 2 !important;
+    min-height: 2rem !important;
+}
+.text-logo {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+    .content-wrapper {
+        padding: 1rem 1rem;
+        background: #fff;
+    }
+    .login-responsive {
+        display: none !important;
+    }
+}
+@media (max-width: 991px) {
+    .login-responsive {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) {
+    .auth.auth-img-bg .auth-form-transparent {
+        width: 55%;
+        margin: auto;
+    }
+    .auth .auth-form-transparent {
+        border: 1px solid white;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+    }
 }
