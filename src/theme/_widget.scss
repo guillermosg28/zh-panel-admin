@@ -1,0 +1,81 @@
+.widget-summary .widget-summary-col {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+.widget-summary .widget-summary-col.widget-summary-col-icon {
+    width: 1%;
+}
+.widget-summary {
+    display: table;
+    width: 100%;
+}
+.bg-primary,
+.background-color-primary {
+    background-color: $primary-color !important;
+}
+.widget-summary .summary-icon {
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 51.2px;
+    font-size: 3.2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 55px;
+}
+.widget-summary .summary {
+    min-height: 65px;
+    word-break: break-all;
+}
+.widget-summary .summary .title {
+    margin: 0;
+    font-size: 14.4px;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.widget-summary .summary .info {
+    font-size: 13.6px;
+    font-size: 0.85rem;
+}
+
+.font-weight-bold,
+b,
+strong {
+    font-weight: 700 !important;
+}
+.widget-summary .summary .amount {
+    margin-right: 0.2em;
+    font-weight: 600;
+    color: #333;
+    vertical-align: middle;
+    font-size: 22.4px;
+    font-size: 1.4rem;
+}
+.widget-summary .summary .info span {
+    vertical-align: middle;
+}
+
+@media (min-width: 480px) {
+    .widget-summary.widget-summary-xlg {
+        padding: 5px 0;
+    }
+    .widget-summary.widget-summary-xlg .summary-icon {
+        width: 110px;
+        height: 110px;
+        line-height: 110px;
+        font-size: 3.2rem;
+    }
+    .widget-summary.widget-summary-xlg .summary {
+        min-height: 80px;
+    }
+    .widget-summary.widget-summary-xlg .summary .title {
+        font-size: 1.4rem;
+    }
+    .widget-summary.widget-summary-xlg .summary .info {
+        font-size: 0.9rem;
+    }
+}
