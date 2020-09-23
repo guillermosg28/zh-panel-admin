@@ -1,0 +1,65 @@
+.tabs {
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.nav-tabs {
+    margin: 0;
+    padding: 0;
+    border-bottom-color: #eee;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs li.active .nav-link,
+.nav-tabs li.active .nav-link:hover,
+.nav-tabs li.active .nav-link:focus {
+    background: #fff;
+    border-left-color: #eee;
+    border-right-color: #eee;
+    border-top: 3px solid #ccc;
+    color: #ccc;
+}
+.tabs .nav-tabs li.active .nav-link,
+.tabs .nav-tabs li.active .nav-link {
+    border-top-color: $primary-color;
+    color: $primary-color;
+}
+
+.nav-tabs li .nav-link {
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    margin-right: 1px;
+}
+.nav-tabs li .nav-link,
+.nav-tabs li .nav-link:hover {
+    background: #f4f4f4;
+    border-bottom: none;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-top: 3px solid #eee;
+    color: #ccc;
+}
+.nav-tabs li:last-child .nav-link {
+    margin-right: 0;
+}
+.tabs .nav-tabs .nav-link,
+.tabs .nav-tabs .nav-link:hover {
+    color: $primary-color;
+}
+.tabs .nav-tabs .nav-link:hover,
+.tabs .nav-tabs .nav-link:hover,
+.tabs .nav-tabs .nav-link:focus,
+.tabs .nav-tabs .nav-link:focus {
+    border-top-color: $primary-color;
+}
+
+.tab-content {
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-top: 0;
+    padding: 15px;
+}
