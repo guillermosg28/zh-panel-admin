@@ -98,3 +98,12 @@
     border-left: solid 1px rgba(0, 0, 0, 0.125) !important;
     border-bottom: solid 4px $primary-color !important;
 }
+.card-footer {
+    border-radius: 0 0 5px 5px;
+    margin-top: -5px;
+    background: #fff;
+}
+.card-footer .pager {
+    margin: 0;
+    padding: 5px 0;
+}

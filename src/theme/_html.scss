@@ -53,3 +53,40 @@ a:focus {
 .font-family-lobster {
     font-family: "Lobster", cursive !important;
 }
+.h-85 {
+    height: 85% !important;
+}
+.hidden {
+    display: none !important;
+}
+.overflow-y-auto {
+    overflow-y: auto !important;
+}
+.text-zh {
+    color: $primary-color;
+}
+.text-green-zh {
+    color: $color-pj-green !important;
+}
+.font-weight-bold,
+b,
+strong {
+    font-weight: 600 !important;
+}
+.h-8 {
+    height: 8% !important;
+}
+.h-90 {
+    height: 90% !important;
+}
+.h-92 {
+    height: 92% !important;
+}
+.bg-zh {
+    background: $primary-color !important;
+    color: #fff !important;
+}
+.container-fluid {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

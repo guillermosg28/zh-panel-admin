@@ -59,6 +59,55 @@ strong {
     vertical-align: middle;
 }
 
+/* Bounce Loading */
+.bounce-loader .bounce1,
+.bounce-loader .bounce2,
+.bounce-loader .bounce3 {
+    animation: 1.4s ease-in-out 0s normal both infinite running bouncedelay;
+    background-color: $primary-color;
+    border-radius: 50%;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+}
+
+.bounce-loader .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.bounce-loader .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+@-webkit-keyframes bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
 @media (min-width: 480px) {
     .widget-summary.widget-summary-xlg {
         padding: 5px 0;
