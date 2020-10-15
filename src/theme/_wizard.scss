@@ -78,6 +78,7 @@
 }
 
 .wizard-progress .wizard-steps li.completed a span {
+    border-color: $primary-color;
     background: $primary-color;
     color: #fff;
 }
@@ -126,17 +127,30 @@
     font-size: 22px;
     border-width: 4px;
 }
-.form-wizard ul.pager .disabled a {
+.pager .disabled a {
     cursor: not-allowed;
 }
 .pager .next > a,
 .pager .next > span {
     float: right;
 }
-.form-wizard ul.pager .next a,
-.form-wizard ul.pager .previous a,
-.form-wizard ul.pager .first a,
-.form-wizard ul.pager .last a,
-.form-wizard ul.pager .finish a {
+
+.pager .next a,
+.pager .previous a,
+.pager .first a,
+.pager .last a,
+.pager .finish a {
     cursor: pointer;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+.pager .finish a {
+    background: $primary-color;
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
 }
