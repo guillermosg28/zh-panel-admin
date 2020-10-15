@@ -148,9 +148,9 @@
     background-color: #eeeeee;
 }
 .pager .finish a {
-    background: $primary-color;
-    color: #fff;
+    background: $primary-color!important;
+    color: #fff!important;
     &:hover{
-        color: #fff;
+        color: #fff!important;
     }
 }
