@@ -179,7 +179,7 @@ html .btn-primary {
 	}
 }
 
-html .btn-outline-primary {
+.btn-outline-primary {
 	color: $primary-color !important;
 	border-color: $primary-color $primary-color darken($primary-color, 10%) !important;
 	&:hover,
@@ -191,13 +191,13 @@ html .btn-outline-primary {
 
 	&:focus,
 	&.focus {
-		box-shadow: 0 0 0 3px fade($primary-color, 50%);
+		box-shadow: 0 0 0 3px fade($primary-color, 50%)!important;
 	}
 
 	&.disabled,
 	&:disabled {
-		color: $primary-color;
-		background-color: transparent;
+		color: $primary-color!important;
+		background-color: transparent!important;
 	}
 
 	&:active,
