@@ -191,7 +191,7 @@ html .btn-primary {
 
 	&:focus,
 	&.focus {
-		box-shadow: 0 0 0 3px fade($primary-color, 50%)!important;
+		box-shadow: 0 0 0 3px rgba($primary-color, 0.5) !important;
 	}
 
 	&.disabled,
