@@ -83,6 +83,12 @@ strong {
 .h-92 {
     height: 92% !important;
 }
+.h-80 {
+    height: 80% !important;
+}
+.h-10 {
+    height: 10% !important;
+}
 .bg-zh {
     background: $primary-color !important;
     color: #fff !important;
@@ -90,4 +96,19 @@ strong {
 .container-fluid {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+.text-1 {
+    font-size: 0.8em !important;
+}
+.list-style-none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.badge {
+    font-size: 11px;
+}
+.bg-yellow-zh {
+    background: $color-zh-yellow !important;
+    color: black !important;
 }

@@ -303,3 +303,63 @@ select.form-control-lg {
 .switcher > input:checked ~ .switcher-indicator:after {
     left: 32px;
 }
+label.checkbox {
+    margin-bottom: 0;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+label.checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+label.checkbox input[type="checkbox"] + .check-mark {
+    background-color: #fff;
+    border: 0.125rem solid #919ca6;
+    cursor: pointer;
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.625rem;
+    position: relative;
+    border-radius: 0.125rem;
+    transition: all 0.2s ease;
+}
+label.checkbox-primary input[type="checkbox"] + .check-mark {
+    border-color: $primary-color;
+}
+label.checkbox input[type="checkbox"] + .check-mark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 0.3125rem;
+    top: 0.125rem;
+    width: 0.375rem;
+    height: 0.625rem;
+    border: solid #fff;
+    border-width: 0 0.125rem 0.125rem 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+label.checkbox input[type="checkbox"]:checked + .check-mark::after {
+    display: block;
+}
+label.checkbox-primary input[type="checkbox"]:checked + .check-mark {
+    background: $primary-color;
+}
+label.checkbox-success input[type="checkbox"] + .check-mark {
+    border-color: #36bc6d;
+}
+label.checkbox-success input[type="checkbox"]:checked + .check-mark {
+    background: #36bc6d;
+}

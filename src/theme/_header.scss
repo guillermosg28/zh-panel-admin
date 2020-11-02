@@ -325,3 +325,66 @@ hr {
         left: auto !important;
     }
 }
+@media only screen and (max-width: 767px) {
+    .header {
+        border: none;
+        height: auto;
+        position: static;
+    }
+    .header .logo-container {
+        height: 60px;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 99;
+    }
+    .header .logo-container {
+        background-image: linear-gradient(#f6f6f6 0%, #ffffff 45%);
+        border-bottom: 1px solid #e9e9e6;
+        border-top: 3px solid #ededed;
+    }
+    .header .logo {
+        margin: 15px 0 0 10px;
+    }
+    .header .header-right {
+        background: #fff;
+        float: none !important;
+        height: 60px;
+        margin-top: 60px;
+        width: 100%;
+    }
+    .header .search,
+    .header .separator {
+        display: none;
+    }
+    .notifications {
+        float: right;
+        margin: 16px 8px 0 0;
+    }
+    .notifications > li {
+        position: static;
+    }
+    .notifications > li .notification-menu {
+        left: 15px;
+        top: auto;
+        width: 94vw !important;
+        left: 50% !important;
+        transform: translate3d(-50%, 109px, 0px) !important;
+    }
+    .userbox {
+        float: left;
+        margin: 16px 0 0 12px;
+        position: relative;
+    }
+    .userbox .profile-picture {
+        display: none;
+    }
+    .userbox .name,
+    .userbox .role {
+        max-width: 68px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
