@@ -87,7 +87,7 @@
     vertical-align: middle;
 }
 .page-header .breadcrumbs li:last-child:after {
-	display: none;
+    display: none;
 }
 @media only screen and (min-width: 768px) {
     .inner-wrapper {
@@ -100,11 +100,20 @@
         flex: 2;
         min-width: 1px;
     }
+    .sidebar-left-collapsed .content-body {
+        margin-left: 73px;
+    }
     .page-header {
         left: 300px;
         margin: 0;
         position: fixed;
         right: 0;
         top: 60px;
+    }
+    .content-collapsed {
+        margin-left: 73px !important;
+    }
+    .content-collapsed .page-header {
+        left: 73px !important;
     }
 }
