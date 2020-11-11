@@ -89,6 +89,13 @@
 .page-header .breadcrumbs li:last-child:after {
     display: none;
 }
+.content-body {
+    height: var(--app-content-height) !important;
+    width: var(--app-content-width) !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 @media only screen and (min-width: 768px) {
     .inner-wrapper {
         padding-top: 110px;
@@ -117,7 +124,6 @@
         left: 73px !important;
     }
 }
-
 
 @media only screen and (max-width: 767px) {
     .inner-wrapper {
